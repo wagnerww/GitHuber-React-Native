@@ -1,9 +1,22 @@
 import React from "react";
 
-import { View } from "react-native";
+import { View, AsyncStorage, StyleSheet } from "react-native";
 
-// import styles from './styles';
+import { colors } from "../../styles";
 
-const Repositories = () => <View />;
+import Header from "../../components/Header";
+
+const Repositories = () => (
+  <View>
+    <Header title="Repositórios" />
+  </View>
+);
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#fff"
+  }
+});
 
 export default Repositories;
