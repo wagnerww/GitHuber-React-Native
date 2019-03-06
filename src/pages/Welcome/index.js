@@ -38,7 +38,7 @@ export default class Welcome extends Component {
     try {
       await this.checkUser(username);
       await this.saveUser(username);
-      navigation.navigate("Repositories");
+      navigation.navigate("User");
     } catch (error) {
       this.setState({ loading: false, error: true });
       console.tron.log("usuário inexistente");
